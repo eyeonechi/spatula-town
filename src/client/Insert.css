@@ -1,0 +1,129 @@
+/* INFO20003 Database Systems
+ * Semester 2 2016
+ * Assignment 3
+ * Insert CSS
+ * Ivan Ken Weng Chee
+ * 736901
+ * ichee@student.unimelb.edu.au
+ */
+
+body {
+	background-attachment	: fixed;
+	background-color		: orange;
+	background-size			: cover;
+	font-family				: sans-serif;
+}
+
+div {
+	display		: inline-block;
+}
+
+fieldset {
+	background		: linear-gradient(yellow, orange);
+	border			: 2px solid white;
+	border-radius	: 10px;
+	font-family		: sans-serif;
+	text-align		: center;
+	vertical-align	: top;
+}
+
+input {
+	background		: linear-gradient(to right, white, lavender);
+	display			: inline-block;
+	font-family		: sans-serif;
+}
+
+input:focus {
+	background	: linear-gradient(white, yellow);
+}
+
+p {
+	text-align	: left;
+}
+
+table {
+	background	: linear-gradient(to right, blue, magenta);
+	border		: 2px white;
+	color		: white;
+	font-family	: sans-serif;
+	overflow	: auto;
+	text-align	: left;
+	width		: 100%;
+}
+
+textarea {
+	background	: linear-gradient(to right, white, lavender);
+	font-family	: sans-serif;
+}
+
+th {
+	text-align	: center;
+}
+
+ul.tab {
+	background 		: linear-gradient(black, red);
+	border			: 2px solid white;
+	border-radius	: 0px 0px 10px 10px;
+	border-top		: none;
+	list-style-type	: none;
+	margin			: 0;
+	overflow		: hidden;
+	padding			: 0;
+}
+
+ul.tab li {
+	float	: left;
+}
+
+ul.tab li a {
+	color			: white;
+	display			: inline-block;
+	font-family		: sans-serif;
+	font-size		: 18px;
+	padding			: 14px 16px;
+	text-decoration	: none;
+	text-align		: center;
+	transition		: 0.3s;
+}
+
+ul.tab li a:hover {
+	background	: linear-gradient(brown, red);
+}
+
+ul.tab li a:focus {
+	background	: linear-gradient(orange, red);
+}
+
+.input {
+	text-align	: right;
+}
+
+.tabcontent {
+	animation			: fadeEffect 1s;
+	border-top			: none;
+	display				: none;
+	padding				: 6px 12px;
+	-webkit-animation	: fadeEffect 1s;
+}
+
+#homeTab {
+	color			: white;
+	text-align		: center;
+	text-shadow		: 2px 2px black;
+}
+
+@-webkit-keyframes fadeEffect {
+	from {
+		opacity	: 0;
+	} to {
+		opacity	: 1;
+	}
+}
+
+@keyframes fadeEffect {
+	from {
+		opacity	: 0;
+	} to {
+		opacity	: 1;
+	}
+}
