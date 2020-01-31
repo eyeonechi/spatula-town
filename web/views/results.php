@@ -10,12 +10,12 @@
 	<head>
 		<meta charset='utf-8'/>
 		<title>Results</title>
-		<link rel='stylesheet' type='text/css' href='Results.css'/>
-		<script src='Javascript.js'></script>
-		<script src='JQuery.js'></script>
+		<link rel='stylesheet' type='text/css' href='stylesheets/results.css'/>
+		<script src='scripts/javascript.js'></script>
+		<script src='scripts/jquery.js'></script>
 		<script>
 			$(document).ready(function() {
-				var event, image = 'backgrounds/Results.jpg';
+				var event, image = 'images/results.jpg';
 				document.body.style.backgroundImage = "url(%s)".replace('%s', image);
 				switchTab(event, 'resultsTab');
 			});
@@ -23,14 +23,14 @@
 	</head>
 	<body>
 		<ul class='tab'>
-			<li><a href='Browse.php' class='tablink'>New Search</a></li>
+			<li><a href='browse.php' class='tablink'>New Search</a></li>
 			<li><a href='#' class='tablink' onclick="switchTab(event, 'resultsTab')">Results</a></li>
 			<li><a href='#' class='tablink' onclick="switchTab(event, 'queryTab')">Query</a></li>
 		</ul>
 		<div id='resultsTab' class='tabcontent'>
 			<fieldset>
 				<?php
-					$con = mysqli_connect("info20003db.eng.unimelb.edu.au", "ichee", "Shinobi*", "ichee");
+					$con = mysqli_connect("fojvtycq53b2f2kx.chr7pe7iynqr.eu-west-1.rds.amazonaws.com", "mssje531r700zmqj", "rrjgh8wuhytb6nkx", "pvpezpgwvwq35pt4");
 					if (mysqli_connect_errno()) {
 						echo "Could not connect to MySQL for the following reason: " . mysqli_connect_error();
 					}
@@ -86,7 +86,7 @@
 							while ($row = mysqli_fetch_array($result)) {
 								echo "<tr>";
 								echo "<td>" . $row['idSpatula'] . "</td>";
-								echo "<td><a href='Details.php?idSpatula=" . $row['idSpatula'] . "'>" . $row['ProductName'] . "</td>";
+								echo "<td><a href='details.php?idSpatula=" . $row['idSpatula'] . "'>" . $row['ProductName'] . "</td>";
 								echo "<td>" . $row['Type'] . "</td>";
 								echo "<td>" . $row['Size'] . "</td>";
 								echo "<td>" . $row['Colour'] . "</td>";

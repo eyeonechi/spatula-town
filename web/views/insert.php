@@ -10,12 +10,12 @@
 	<head>
 		<meta charset='utf-8'/>
 		<title>Insert</title>
-		<link rel='stylesheet' type='text/css' href='Insert.css'/>
-		<script src='Javascript.js'></script>
-		<script src='JQuery.js'></script>
+		<link rel='stylesheet' type='text/css' href='stylesheets/insert.css'/>
+		<script src='scripts/javascript.js'></script>
+		<script src='scripts/jquery.js'></script>
 		<script>
 			$(document).ready(function() {
-				var event, image = 'backgrounds/Insert.jpg';
+				var event, image = 'images/insert.jpg';
 				document.body.style.backgroundImage = "url(%s)".replace('%s', image);
 				switchTab(event, 'insertTab');
 			});
@@ -23,14 +23,14 @@
 	</head>
 	<body>
 		<ul class='tab'>
-			<li><a href='Orders.php' class='tablink'>New Order</a></li>
+			<li><a href='orders.php' class='tablink'>New Order</a></li>
 			<li><a href='#' class='tablink' onclick="switchTab(event, 'insertTab')">Insert</a></li>
 			<li><a href='#' class='tablink' onclick="switchTab(event, 'queryTab')">Query</a></li>
 		</ul>
 		<div id='insertTab' class='tabcontent'>
 			<fieldset>
 				<?php
-					$con = mysqli_connect("info20003db.eng.unimelb.edu.au", "ichee", "Shinobi*", "ichee");
+					$con = mysqli_connect("fojvtycq53b2f2kx.chr7pe7iynqr.eu-west-1.rds.amazonaws.com", "mssje531r700zmqj", "rrjgh8wuhytb6nkx", "pvpezpgwvwq35pt4");
 					if (mysqli_connect_errno()) {
 						echo "Could not connect to MySQL for the following reason: " . mysqli_connect_error();
 					}

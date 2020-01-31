@@ -10,12 +10,12 @@
 	<head>
 		<meta charset='utf-8'/>
 		<title>Browse</title>
-		<link rel='stylesheet' type='text/css' href='Browse.css'/>
-		<script src='Javascript.js'></script>
-		<script src='JQuery.js'></script>
+		<link rel='stylesheet' type='text/css' href='stylesheets/browse.css'/>
+		<script src='scripts/javascript.js'></script>
+		<script src='scripts/jquery.js'></script>
 		<script>
 			$(document).ready(function() {
-				var event, image = 'backgrounds/Browse.jpg';
+				var event, image = 'images/browse.jpg';
 				document.body.style.backgroundImage = "url(%s)".replace('%s', image);
 				switchTab(event, 'homeTab');
 			});
@@ -94,7 +94,7 @@
 		</div>
 		<div id='summaryTab' class='tabcontent'>
 			<fieldset>
-				<form method='POST' action='Results.php'>
+				<form method='POST' action='results.php'>
 					<p>Search Summary</p><br>
 					<table border='1'>
 						<tr>
