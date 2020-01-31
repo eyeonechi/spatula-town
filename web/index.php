@@ -1,5 +1,7 @@
 <?php
 
+  use Silex\Application;
+
   $app = new Silex\Application();
   $app['debug'] = true;
 
