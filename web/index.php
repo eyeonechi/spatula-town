@@ -24,7 +24,7 @@
   // Web handlers
   $app->get('/', function() use($app) {
     $app['monolog']->addDebug('logging output.');
-    return $app['twig']->render('orders.php');
+    return $app['twig']->render('browse.php');
   });
 
   $app->run();
