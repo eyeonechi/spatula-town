@@ -23,7 +23,7 @@
 	</head>
 	<body>
 		<ul class='tab'>
-			<li><a href='browse.php' class='tablink'>Browse</a></li>
+			<li><a href='/' class='tablink'>Browse</a></li>
 			<li><a href='#' class='tablink' onclick="switchTab(event, 'detailsTab')">Details</a></li>
 			<li><a href='#' class='tablink' onclick="switchTab(event, 'queryTab')">Query</a></li>
 		</ul>

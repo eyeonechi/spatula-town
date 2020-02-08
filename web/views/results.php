@@ -23,7 +23,7 @@
 	</head>
 	<body>
 		<ul class='tab'>
-			<li><a href='browse.php' class='tablink'>New Search</a></li>
+			<li><a href='/' class='tablink'>New Search</a></li>
 			<li><a href='#' class='tablink' onclick="switchTab(event, 'resultsTab')">Results</a></li>
 			<li><a href='#' class='tablink' onclick="switchTab(event, 'queryTab')">Query</a></li>
 		</ul>
@@ -86,7 +86,7 @@
 							while ($row = mysqli_fetch_array($result)) {
 								echo "<tr>";
 								echo "<td>" . $row['idSpatula'] . "</td>";
-								echo "<td><a href='details.php?idSpatula=" . $row['idSpatula'] . "'>" . $row['ProductName'] . "</td>";
+								echo "<td><a href='details?idSpatula=" . $row['idSpatula'] . "'>" . $row['ProductName'] . "</td>";
 								echo "<td>" . $row['Type'] . "</td>";
 								echo "<td>" . $row['Size'] . "</td>";
 								echo "<td>" . $row['Colour'] . "</td>";

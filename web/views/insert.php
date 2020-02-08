@@ -23,7 +23,7 @@
 	</head>
 	<body>
 		<ul class='tab'>
-			<li><a href='orders.php' class='tablink'>New Order</a></li>
+			<li><a href='orders' class='tablink'>New Order</a></li>
 			<li><a href='#' class='tablink' onclick="switchTab(event, 'insertTab')">Insert</a></li>
 			<li><a href='#' class='tablink' onclick="switchTab(event, 'queryTab')">Query</a></li>
 		</ul>

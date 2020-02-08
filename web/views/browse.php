@@ -94,7 +94,7 @@
 		</div>
 		<div id='summaryTab' class='tabcontent'>
 			<fieldset>
-				<form method='POST' action='results.php'>
+				<form method='POST' action='results'>
 					<p>Search Summary</p><br>
 					<table border='1'>
 						<tr>

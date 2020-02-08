@@ -58,7 +58,7 @@
 		</div>
 		<div id='ordersTab' class='tabcontent'>
 			<fieldset>
-				<form method='POST' action='insert.php'>
+				<form method='POST' action='insert'>
 					<p>Enter spatula order quantity</p>
 					<br>
 					<table border='1'>
@@ -90,7 +90,7 @@
 						while ($row = mysqli_fetch_array($result)) {
 							echo "<tr>";
 							echo "<td>" . $row['idSpatula'] . "</td>";
-							echo "<td><a href='details.php?idSpatula=" . $row['idSpatula'] . "'>" . $row['ProductName'] . "</td>";
+							echo "<td><a href='details?idSpatula=" . $row['idSpatula'] . "'>" . $row['ProductName'] . "</td>";
 							echo "<td>" . $row['Type'] . "</td>";
 							echo "<td>" . $row['Size'] . "</td>";
 							echo "<td>" . $row['Colour'] . "</td>";
